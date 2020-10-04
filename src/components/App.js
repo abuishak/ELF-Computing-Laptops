@@ -7,6 +7,8 @@ import slugify from 'slugify';
 import './App.css';
 import First from './First/First'
 import Second from './First/Second'
+import MainForm from './First/MainForm'
+
 // This object will allow us to
 // easily convert numbers into US dollar values
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
@@ -106,12 +108,12 @@ class App extends Component {
             {features}
           </form>
           <section className="main__summary">
-            <h2>Your cart</h2>
+            <MainForm />
             {summary}
             <div className="summary__total">
               <div className="summary__total__label">Total</div>
               <div className="summary__total__value">
-                {USCurrencyFormat.format(total)}
+              {USCurrencyFormat.format(total)}
               </div>
             </div>
           </section>
