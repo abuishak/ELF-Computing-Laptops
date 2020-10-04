@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-class First extends Component{
+class Second extends Component{
      
 
     
@@ -9,9 +9,11 @@ class First extends Component{
        return(
         
             <div className="App">
-              <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+             <main>
+          
+            <h2>Customize your laptop</h2>
+           
+          </main>
         
         </div>
           );
@@ -21,4 +23,4 @@ class First extends Component{
       }
 }
 
-export default First
+export default Second
